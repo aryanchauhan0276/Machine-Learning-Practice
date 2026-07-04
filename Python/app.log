@@ -1,7 +1,0 @@
-DEBUG:root:This is debugging statement
-INFO:root:This is information statement
-WARNING:root:This is warning statement
-ERROR:root:This is error message
-CRITICAL:root:This is a critical message
-DEBUG:root:Additon has been done in old file
-DEBUG:root:Substraction has been done into old file
