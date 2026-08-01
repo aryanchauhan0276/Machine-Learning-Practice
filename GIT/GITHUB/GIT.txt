@@ -1,0 +1,5 @@
+git clone [URL]
+git checkout main
+git merge [name]
+git logs
+git log -p -[n]
