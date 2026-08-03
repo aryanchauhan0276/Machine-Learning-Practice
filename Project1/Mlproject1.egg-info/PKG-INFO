@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: Mlproject1
+Version: 1.0
+Author: AryanChauhan
+Author-email: aryanchauhan0276@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Requires-Dist: sk-learn
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
