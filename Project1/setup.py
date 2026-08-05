@@ -1,20 +1,27 @@
-# Building a application as a package so that it can be used by other also on PyPi
 from setuptools import find_packages,setup
 from typing import List
-hyphem='-e .'
-def get_req(file_path:str)->List[str]:
-    requirments=[]
+
+HYPEN_E_DOT='-e .'
+def get_requirements(file_path:str)->List[str]:
+    '''
+    this function will return the list of requirements
+    '''
+    requirements=[]
     with open(file_path) as file_obj:
-        requirments=file_obj.readlines() #\n will get added
-        requirments=[req.replace("\n","") for req in requirments]
-        if hyphem in requirments:
-            requirments.remove(hyphem)
-    return requirments
-         
+        requirements=file_obj.readlines()
+        requirements=[req.replace("\n","") for req in requirements]
+
+        if HYPEN_E_DOT in requirements:
+            requirements.remove(HYPEN_E_DOT)
+    
+    return requirements
+
 setup(
-    name="Mlproject1",version="1.0",author="AryanChauhan",
-    author_email="aryanchauhan0276@gmail.com",
-    package_dir={"": "src"},
-    packages=find_packages(where="src"),
-    install_requires=get_req("requirments.txt")
-    )
+name='mlproject',
+version='0.0.1',
+author='AryanChauhan',
+author_email='aryanchauhan0276@gmail.com',
+packages=find_packages(),
+install_requires=get_requirements('requirments.txt')
+
+)

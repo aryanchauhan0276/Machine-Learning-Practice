@@ -1,0 +1,3 @@
+[ 2026-08-05 14:54:23,457 ] 164 numexpr.utils - INFO - NumExpr defaulting to 12 threads.
+[ 2026-08-05 14:54:24,972 ] 21 root - INFO - Data Ingestion Method
+[ 2026-08-05 14:54:24,981 ] 26 root - INFO - train_test_split
