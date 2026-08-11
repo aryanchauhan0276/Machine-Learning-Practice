@@ -12,7 +12,7 @@ FILE_NAME: str = "phisingData.csv"
 
 TRAIN_FILE_NAME: str = "train.csv"
 TEST_FILE_NAME: str = "test.csv"
-
+SCHEMA_FILE_PATH : str= os.path.join("data_schema","schema.yaml")
 
 
 
@@ -25,3 +25,18 @@ DATA_INGESTION_DIR_NAME : str ="data_ingestion"
 DATA_INGESTION_FEATURE_STORE_DIR : str ="feature_store"
 DATA_INGESTION_INGESTED_DIR : str ="ingested"
 DATA_INGESTION_TRAIN_TEST_SPLIT_RATIO : float =0.2
+
+"""
+    Data Validation related constant start with Data_Validation
+"""
+DATA_VALIDATION_DIR : str ="Data_Validation"
+DATA_VALIDATION_VALID_DATA_DIR : str ="validated"
+DATA_VALIDATION_INVALID_DATA_DIR : str ="invalid"
+
+"""DATA_VALIDATION_VALID_TRAINFILE_PATH : str =""
+DATA_VALIDATION_VALID_TEST_FILE_PATH : str =""
+DATA_VALIDATION_INVALID_TRAINFILE_PATH : str =""
+DATA_VALIDATION_INVALID_TESTFILE_PATH : str ="" """
+
+DATA_VALIDATION_DATA_DRIFT_REPORT_DIR : str= "drift_report"
+DATA_VALIDATION_DATA_DRIFT_REPORT_FILENAME : str="report.yaml"
