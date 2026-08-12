@@ -7,7 +7,7 @@ import sys
 import pandas as pd
 from NetworkSecurity.entity.artifact_entity import DataIngestionArtifact,DataValidationArtifact
 from NetworkSecurity.entity.config_entity import DataValidationConfig
-from scipy.stats import k2_2samp
+from scipy.stats import ks_2samp
 from NetworkSecurity.Constants.training_pipeline import SCHEMA_FILE_PATH
 from NetworkSecurity.utils.main_utils.utils import read_yaml_file,write_yaml_file
 class DataValidation:
@@ -45,7 +45,7 @@ class DataValidation:
             for column in base_df.columns:
                 d1=base_df[column]
                 d2=current_df[column]
-                is_same_dist=k2_2samp(d1,d2)
+                is_same_dist=ks_2samp(d1,d2)
                 if threshold <=is_same_dist.pvalue:
                     is_found=False
                 else:
@@ -88,5 +88,15 @@ class DataValidation:
             test_dataframe.to_csv(
                 self.data_validation_config.valid_test_file_path,index=False,header=True
             )            
+            data_validation_artifact = DataValidationArtifact(
+                            validation_status=status,
+                            valid_train_file_path=self.data_ingestion_artifact.trained_file_path,
+                            valid_test_file_path=self.data_ingestion_artifact.test_file_path,
+                            invalid_train_file_path=None,
+                            invalid_test_file_path=None,
+                            drift_report_file_path=self.data_validation_config.drift_report_file_path,
+                        )
+            return data_validation_artifact
+
         except Exception as e:
             raise NetworkSecurityException

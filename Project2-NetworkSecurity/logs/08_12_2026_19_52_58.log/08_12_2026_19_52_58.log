@@ -1,0 +1,6 @@
+[ 2026-08-12 19:53:00,972 ] 14 root - INFO - Running Data Ingestion
+[ 2026-08-12 19:53:03,283 ] 52 root - INFO - Train Test Split
+[ 2026-08-12 19:53:03,283 ] 53 root - INFO - Exited Train Test Split
+[ 2026-08-12 19:53:03,284 ] 57 root - INFO - Directory Creates Successfully
+[ 2026-08-12 19:53:03,333 ] 65 root - INFO - testing Directory Creates Successfully
+[ 2026-08-12 19:53:03,350 ] 17 root - INFO - Data Initiation Completed
