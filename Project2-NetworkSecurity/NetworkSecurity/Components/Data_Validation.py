@@ -99,4 +99,4 @@ class DataValidation:
             return data_validation_artifact
 
         except Exception as e:
-            raise NetworkSecurityException
+            raise NetworkSecurityException(str(e),sys)
