@@ -1,0 +1,8 @@
+[ 2026-08-12 20:00:14,235 ] 14 root - INFO - Running Data Ingestion
+[ 2026-08-12 20:00:16,030 ] 52 root - INFO - Train Test Split
+[ 2026-08-12 20:00:16,030 ] 53 root - INFO - Exited Train Test Split
+[ 2026-08-12 20:00:16,031 ] 57 root - INFO - Directory Creates Successfully
+[ 2026-08-12 20:00:16,071 ] 65 root - INFO - testing Directory Creates Successfully
+[ 2026-08-12 20:00:16,081 ] 17 root - INFO - Data Initiation Completed
+[ 2026-08-12 20:00:16,219 ] 32 root - INFO - Required No. of Cols:2
+[ 2026-08-12 20:00:16,219 ] 33 root - INFO - DataFrame No. of Cols:31
