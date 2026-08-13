@@ -40,4 +40,7 @@ def save_object(file_path: str, obj: object) -> None:
         logging.info("Exited the save_object method of MainUtils class")
     except Exception as e:
         raise NetworkSecurityException(e, sys) from e
- 
+    
+
+def load_numpy_array_data():
+    pass
