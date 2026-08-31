@@ -1,0 +1,1 @@
+"""This file conatins all the constants required for training pipeline"""
