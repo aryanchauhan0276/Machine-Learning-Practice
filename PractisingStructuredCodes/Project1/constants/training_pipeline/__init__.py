@@ -1,1 +1,5 @@
 """This file conatins all the constants required for training pipeline"""
+Training_Data_Path="train.csv"
+Test_Data_Path="test.csv"
+Artifact_File_Path:str
+Dataset_Path="phishing.csv"
