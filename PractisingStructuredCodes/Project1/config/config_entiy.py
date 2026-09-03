@@ -5,4 +5,7 @@ class training_pipeline_config:
         self.dataset_path=training_pipeline.Dataset_Path
 
    
-    #This is practice code
+class data_ingestion_config:
+    def __init__(self):
+        pass
+
