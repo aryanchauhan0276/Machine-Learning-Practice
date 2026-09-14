@@ -13,3 +13,6 @@ class data_ingestion_config:
         self.data_ingestion_path=os.path.join(self.data_ingestion_dir,training_pipeline.Data_Ingested)
         self.training_dataset=os.path.join(training_pipeline_config.artifact_file_path,training_pipeline.Training_Data_Path)
         self.test_dataset=os.path.join(training_pipeline_config.artifact_file_path,training_pipeline.Test_Data_Path)
+class data_validation_config:
+    def __init__(self,training_pipeline_config):
+        pass
